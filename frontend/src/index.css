@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Modo de Alto Contraste */
+.high-contrast {
+  background-color: black;
+  color: yellow;
+}
+
+.high-contrast button {
+  background-color: yellow;
+  color: black;
+  border: 2px solid yellow;
+  font-size: 1rem; /* Ajuste del tamaño de fuente */
+  padding: 0.5rem 1rem; /* Espaciado interno consistente */
+}
+
+.high-contrast input {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.high-contrast a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast h4, .high-contrast h5, .high-contrast h6 {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* Ajustes para las tablas y formularios */
+.high-contrast table {
+  border: 2px solid yellow;
+  color: yellow;
+  width: 100%;
+}
+
+.high-contrast th, .high-contrast td {
+  border: 1px solid yellow;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.high-contrast label {
+  color: yellow;
+}
+
+/* Aumentar el tamaño del texto en el modo de alto contraste */
+.high-contrast * {
+  font-size: 1.2rem; /* Incremento general del tamaño del texto */
+}
+
+/* Adaptación para Tailwind Utility Classes */
+.high-contrast .bg-blue-500 {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.high-contrast .text-white {
+  color: black !important;
+}
+
+.high-contrast .hover\:bg-blue-700:hover {
+  background-color: #ffd700 !important; /* Amarillo más brillante */
+}
+
+html {
+  font-size: 16px; /* Tamaño base */
+}
+
+body {
+  transition: font-size 0.3s ease; /* Transición suave al cambiar el zoom */
+}

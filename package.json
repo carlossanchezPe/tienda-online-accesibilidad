@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chart.js": "^4.4.7",
+    "simple-keyboard": "^3.8.22"
+  }
+}
